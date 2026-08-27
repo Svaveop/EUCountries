@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef2f7;
+    color: #17202a;
+}
+
+header {
+    background: #18212b;
+    color: white;
+    padding: 24px 32px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 6px 0 0;
+    color: #aeb8c3;
+}
+
+main {
+    max-width: 1650px;
+    margin: auto;
+    padding: 20px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.55fr) minmax(450px, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 14px;
+    box-shadow:
+        0 4px 18px rgba(0, 0, 0, .07);
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 16px 18px;
+    border-bottom: 1px solid #e4e8ed;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.card-header p {
+    margin: 5px 0 0;
+    font-size: 13px;
+    color: #77818c;
+}
+
+
+
+
+.map-card {
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+}
+
+#map {
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+    background: #dce7f0;
+}
+
+
+
+
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    padding: 13px 18px;
+    border-top: 1px solid #e4e8ed;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    color: #56616c;
+}
+
+.legend-color {
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+}
+
+.legend-eu {
+    background: #2563eb;
+}
+
+.legend-candidate {
+    background: #f59e0b;
+}
+
+.legend-other {
+    background: #cbd5e1;
+}
+
+.legend-former {
+    background: #dc2626;
+}
+
+
+
+
+.table-card {
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+}
+
+.controls {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e4e8ed;
+}
+
+#search {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccd3da;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+#search:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.table-scroll {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 13px;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+
+    background: #242b33;
+    color: white;
+
+    padding: 11px 9px;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+th:hover {
+    background: #303943;
+}
+
+td {
+    padding: 9px 8px;
+    border-bottom: 1px solid #e8ebef;
+    text-align: center;
+    white-space: nowrap;
+}
+
+td:first-child {
+    text-align: left;
+}
+
+tbody tr {
+    cursor: pointer;
+}
+
+tbody tr:nth-child(even) {
+    background: #fafbfc;
+}
+
+tbody tr:hover {
+    background: #e8eef8;
+}
+
+tbody tr.selected {
+    background: #dbeafe !important;
+    box-shadow:
+        inset 4px 0 0 #2563eb;
+}
+
+.country-cell {
+    font-weight: 600;
+}
+
+.flag {
+    width: 32px;
+    height: 21px;
+    object-fit: cover;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-right: 8px;
+    box-shadow:
+        0 1px 3px rgba(0, 0, 0, .2);
+}
+
+
+
+
+.status {
+    font-weight: 600;
+}
+
+.status-member {
+    color: #166534;
+}
+
+.status-candidate {
+    color: #b45309;
+}
+
+.status-potential {
+    color: #c2410c;
+}
+
+.status-former {
+    color: #b91c1c;
+}
+
+.status-other {
+    color: #64748b;
+}
+
+
+
+
+.country-popup {
+    min-width: 190px;
+}
+
+.country-popup-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+.popup-row {
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+
+
+
+@media (max-width: 1050px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .map-card {
+        height: 570px;
+    }
+
+    .table-card {
+        height: 650px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    main {
+        padding: 10px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    .map-card {
+        height: 460px;
+    }
+
+    .table-card {
+        height: 600px;
+    }
+}

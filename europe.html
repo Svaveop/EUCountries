@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>European Countries — EU, Schengen & Euro</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>European Countries</h1>
+        <p>
+            European Union · Schengen Area · Eurozone
+        </p>
+    </header>
+
+    <main>
+        <div class="dashboard">
+            <section class="card map-card">
+                <div class="card-header">
+                    <h2>Europe</h2>
+                    <p>
+                        Click a country on the map or in the table.
+                    </p>
+                </div>
+
+                <div id="map"></div>
+                <div class="legend">
+
+                    <div class="legend-item">
+                        <span class="legend-color legend-eu"></span>
+                        EU member
+                    </div>
+
+                    <div class="legend-item">
+                        <span class="legend-color legend-candidate"></span>
+                        Candidate
+                    </div>
+
+                    <div class="legend-item">
+                        <span class="legend-color legend-other"></span>
+                        Other
+                    </div>
+
+                    <div class="legend-item">
+                        <span class="legend-color legend-former"></span>
+                        Former EU member
+                    </div>
+                </div>
+            </section>
+
+            <section class="card table-card">
+                <div class="card-header">
+                    <h2>Countries</h2>
+                    <p>
+                        EU, Schengen and Euro adoption dates
+                    </p>
+                </div>
+
+                <div class="controls">
+                    <input id="search" type="text" placeholder="Search country..." autocomplete="off">
+                </div>
+
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th data-sort="country">
+                                    Country
+                                </th>
+
+                                <th data-sort="euJoined">
+                                    EU
+                                </th>
+
+                                <th data-sort="schengenJoined">
+                                    Schengen
+                                </th>
+
+                                <th data-sort="euroAdopted">
+                                    Euro
+                                </th>
+
+                                <th data-sort="euStatus">
+                                    EU status
+                                </th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="countryTable"></tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
