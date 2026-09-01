@@ -30,7 +30,9 @@ The project includes:
 -  European countries outside the EU
 -  United Kingdom as a former EU member
 
-An asterisk (`*`) is used for candidate-related dates where the year does not represent EU accession.
+An asterisk (`*`) is used for dates that do not represent EU accession or formal Eurozone membership.
+
+> `*` For candidate countries, the year indicates when candidate status was granted rather than when the country joined the EU. For countries that use the euro without being members of the Eurozone, the year indicates when they began using the euro.
 
 
 ## 🛠️ Technologies
