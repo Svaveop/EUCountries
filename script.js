@@ -40,13 +40,17 @@ const countries = [
     ["Ukraine", "ua", "UKR", "2022*", null, null, "Candidate"],
     ["Kosovo", "xk", "XKX", "2022*", null, null, "Candidate"],
 
+    ["Andorra", "ad", "AND", null, null, 2012, "Not a candidate"],
     ["Armenia", "am", "ARM", null, null, null, "Not a candidate"],
     ["Azerbaijan", "az", "AZE", null, null, null, "Not a candidate"],
     ["Belarus", "by", "BLR", null, null, null, "Not a candidate"],
     ["Iceland", "is", "ISL", null, 2001, null, "Not a candidate"],
     ["Israel", "il", "ISR", null, null, null, "Not a candidate"],
+    ["Liechtenstein", "li", "LIE", null, 2008, null, "Not a candidate"],
+    ["Monaco", "mc", "MCO", null, null, 1999, "Not a candidate"],
     ["Norway", "no", "NOR", null, 2001, null, "Not a candidate"],
     ["Russia", "ru", "RUS", null, null, null, "Not a candidate"],
+    ["San Marino", "sm", "SMR", null, null, 1999, "Not a candidate"],
     ["Switzerland", "ch", "CHE", null, 2008, null, "Not a candidate"],
 
     ["United Kingdom", "gb", "GBR", 1973, null, null, "Former EU member"]
